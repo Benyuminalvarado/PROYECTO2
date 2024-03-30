@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Color de fondo de la página */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px; /* Aumentar el ancho máximo del contenido */
+    margin: 20px auto;
+    padding: 20px; /* Añadir relleno para separar el contenido del borde */
+    display: flex; /* Usar flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a la pantalla */
+    justify-content: space-around; /* Distribuir los elementos de manera uniforme */
+}
+
+section {
+    width: 45%; /* Establecer el ancho de cada sección */
+    margin-bottom: 20px; /* Añadir espacio entre las secciones */
+    background-color: #fff; /* Color de fondo de las secciones */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para las secciones */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.vehiculo-info {
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1 {
+    font-size: 48px; /* Aumentar el tamaño del título principal */
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px; /* Aumentar el tamaño de los títulos de vehículos */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px; /* Aumentar el tamaño del texto de precio y venta */
+    line-height: 1.5;
+    margin-bottom: 10px; /* Añadir espacio entre los párrafos */
+}
+
+strong a {
+    font-size: 30px; /* Tamaño de fuente más grande */
+    color: #FF5733; /* Color personalizado */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
+strong a:hover {
+    color: #E65A2D; /* Color al pasar el cursor sobre el enlace */
+}

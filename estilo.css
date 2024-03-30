@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#banner {
+   
+    background-image: url('https://get.wallhere.com/photo/miata-Mazda-MX-5-MX-5-mx5-widebody-phlexo-phlex0-Rocket-Bunny-Mazda-teamelevate-sunset-dodgerstadium-elysianpark-Los-Angeles-1517727.jpg'); 
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+
+#arriba {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+    column-gap: 25px;
+}
+
+nav > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#banner > h1 {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+   
+}
+
+#boton {
+    margin-top: 80px;
+    height: 10vh;
+    
+}
+
+#boton a {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 25px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 100px; 
+    display: inline-block;
+   
+}
