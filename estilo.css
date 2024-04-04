@@ -10,7 +10,7 @@
 
 #banner {
    
-    background-image: url('https://get.wallhere.com/photo/miata-Mazda-MX-5-MX-5-mx5-widebody-phlexo-phlex0-Rocket-Bunny-Mazda-teamelevate-sunset-dodgerstadium-elysianpark-Los-Angeles-1517727.jpg'); 
+    background-image: url('https://i.pinimg.com/originals/09/ab/cb/09abcb9c637d5e1e403e905b2704631c.jpg'); 
     background-size: cover;
     display: flex;
     height: 100vh;
@@ -22,20 +22,37 @@
 }
 
 #arriba {
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 10vh;
+    position: absolute;
+    width: 100%;
+    column-gap: 1000px;
+     
+    
+    
 }
 
 nav {
+    
     display: flex;
     column-gap: 25px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 25px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+
+    
 }
 
 nav > a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
+    
 }
 
 #banner > h1 {
@@ -49,16 +66,16 @@ nav > a {
 }
 
 #boton {
-    margin-top: 80px;
-    height: 10vh;
+    margin-top: 100px;
+    height: 20vh;
     
 }
 
 #boton a {
     color: #ffffff;
     background-color: #000000;
-    padding: 25px 40px;
-    border-radius: 20px;
+    padding: 30px 60px;
+    border-radius: 40px;
     text-decoration: none;
     margin-top: 100px; 
     display: inline-block;
