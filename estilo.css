@@ -100,3 +100,39 @@ html{
     background-color: #f2f2f2;
     border-radius: 5px;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.carrito-btn, .regresar-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #15ff00;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.carrito-btn:hover, .regresar-btn:hover {
+    background-color: #003f83;
+}
