@@ -92,3 +92,11 @@
 html{
     scroll-behavior: smooth;
 }
+
+#carrito {
+    float: right;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
