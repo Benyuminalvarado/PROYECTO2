@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .vehiculos { /* Nuevo estilo para contenedor de vehículos */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Ajusta esto según prefieras */
+            gap: 20px; /* Espacio entre vehículos */
+        }
+        .vehiculo { /* Estilo para cada vehículo */
+            flex: 0 1 300px; /* Flexibilidad, crecimiento, y base */
+            margin-bottom: 20px;
+        }
+        .vehiculo-info { margin-bottom: 20px; }
+        .vehiculo-info h2 { margin: 0; }
+        .agregar-carrito {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .carrito {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .item-carrito { border-bottom: 1px solid #ddd; padding: 10px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tipos de Vehículos</h1>
+    </header>
+
+    <main>
+        <div class="vehiculos"> <!-- Contenedor Flex para vehículos -->
+            <!-- Vehículo 1 -->
+            <div class="vehiculo">
+                <img src="https://www.omoren.com/upload/save_image/0827175319_6128a7ff6bb7c.jpg" alt="Nissan GTR R35" width="300">
+                <div class="vehiculo-info">
+                    <h2>Nissan GTR R35</h2>
+                    <p><strong>Precio:</strong> $34,290,000</p>
+                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">Agregar al carrito</button>
+                </div>
+            </div>
+            <!-- Vehículo 2 -->
+            <div class="vehiculo">
+                <img src="https://www.omoren.com/upload/save_image/0827175319_6128a7ff6bb7c.jpg" alt="Nissan GTR R35" width="300">
+                <div class="vehiculo-info">
+                    <h2>Nissan GTR R35</h2>
+                    <p><strong>Precio:</strong> $34,290,000</p>
+                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">Agregar al carrito</button>
+                </div>
+            </div>
+            <!-- Vehículo 3 -->
+            <div class="vehiculo">
+                <img src="https://www.omoren.com/upload/save_image/0827175319_6128a7ff6bb7c.jpg" alt="Nissan GTR R35" width="300">
+                <div class="vehiculo-info">
+                    <h2>Nissan GTR R35</h2>
+                    <p><strong>Precio:</strong> $34,290,000</p>
+                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">Agregar al carrito</button>
+                </div>
+            </div>
+        </div> <!-- Fin del contenedor Flex -->
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="itemsCarrito">No hay productos agregados.</div>
+        </div>
+    </main>
+
+    <script>
+        function agregarAlCarrito(modelo, precio) {
+            const contenidoCarrito = document.getElementById('itemsCarrito');
+            // Verifica si es el primer elemento agregado
+            if(contenidoCarrito.innerHTML === 'No hay productos agregados.') {
+                contenidoCarrito.innerHTML = ''; // Limpia el mensaje inicial
+            }
+            // Crea un nuevo elemento para el carrito
+            const elementoCarrito = document.createElement('div');
+            elementoCarrito.classList.add('item-carrito');
+            elementoCarrito.innerHTML = `<p>Modelo: ${modelo}</p><p>Precio: ${precio}</p>`;
+            // Agrega el nuevo elemento al carrito
+            contenidoCarrito.appendChild(elementoCarrito);
+        }
+    </script>
+</body>
+</html>
