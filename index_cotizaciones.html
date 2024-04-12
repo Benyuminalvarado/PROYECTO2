@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
         }
         .container {
             max-width: 600px;
@@ -28,7 +41,7 @@
         label {
             margin-top: 10px;
         }
-        input, select {
+        input, select, textarea {
             padding: 10px;
             margin-top: 5px;
         }
@@ -52,9 +65,17 @@
         }
     </style>
 </head>
+
 <body>
+    <div class="navbar">
+        <a href="index.html" class="regresar-btn">Regresar</a>
+        <a href="#">modelos</a> 
+        <a href="#">Cotizaciones</a>
+        <a href="#"> Personal</a>
+        <a href="#"> Servicios</a>
+        <a href="#"> Fotos</a>
+    </div>
     <div class="container">
-        <button><a href="index.html" class="regresar-btn">Regresar</a></button>
         <h2>Formulario de Cotización</h2>
         <form id="cotizacionForm">
             <label for="nombre">Nombre Completo:</label>
@@ -83,4 +104,5 @@
         </form>
     </div>
 </body>
+
 </html>
