@@ -5,8 +5,7 @@
     margin: 0;
 }
 
-#bannerr{
-    background-image: url('https://novokuznetsk.lifan-car.ru/custom/Lifan/crm/misc/image/content/murman/video.jpg');
+#carouselBanner{
     height: 60vh;
     background-size: cover;
     display: flex;
@@ -27,14 +26,6 @@
     
 }
 
-
-#cosasArriba{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 10vh;
-    animation: bajar 1s;
-}
 
 @keyframes bajar {
     0%{
@@ -85,7 +76,7 @@
 }
 
 #cosasArriba > img {
-    width: 95px; 
+    width: 200px; 
     height: auto; 
 }
 
