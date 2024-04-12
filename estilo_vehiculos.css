@@ -3,6 +3,10 @@ body {
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
+    background-image: url(https://alexisautos.cl/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-19-at-7.20.44-PM.jpeg);
+    width: 3000 px;
+    height: 200 px;
+
 }
 
 header {
@@ -25,7 +29,7 @@ h1 {
     margin: 0;
 }
 
-/* Estilos para los botones del encabezado */
+
 .carrito-btn, .regresar-btn {
     text-decoration: none;
     color: white;

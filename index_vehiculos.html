@@ -33,6 +33,7 @@
                     <input type="hidden" name="producto" value="Nissan GTR R35">
                     <input type="hidden" name="precio" value="34290000">
                     <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
+                    
                  
 
                     
@@ -51,7 +52,8 @@
                 <form action="carrito.php" method="post">
                     <input type="hidden" name="producto" value="miata mx-5">
                     <input type="hidden" name="precio" value="16990000">
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
+                    
             </div>
         </section>
 
@@ -66,7 +68,7 @@
                 <form action="carrito.php" method="post">
                     <input type="hidden" name="producto" value="Nissan GTR R35">
                     <input type="hidden" name="precio" value="38990000">
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
             </div>
         </section>
 
@@ -81,7 +83,7 @@
                 <form action="carrito.php" method="post">
                     <input type="hidden" name="producto" value="Nissan GTR R35">
                     <input type="hidden" name="precio" value="24990000">
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
             </div>
         </section>
 
@@ -97,7 +99,7 @@
                 <form action="carrito.php" method="post">
                     <input type="hidden" name="producto" value="bmw e36">
                     <input type="hidden" name="precio" value="30000000">
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
             </div>
         </section>
 
@@ -112,7 +114,7 @@
                 <form action="carrito.php" method="post">
                     <input type="hidden" name="producto" value="Suzuki dzire 2016">
                     <input type="hidden" name="precio" value="4500000">
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
             </div>
         </section>
 
@@ -128,7 +130,7 @@
                     <input type="hidden" name="producto" value="opel omega">
                     <input type="hidden" name="precio" value="15000000">
                     
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
             </div>
         </section>
 
@@ -143,7 +145,7 @@
                 <form action="carrito.php" method="post">
                     <input type="hidden" name="producto" value="Subaru impreza">
                     <input type="hidden" name="precio" value="9000000">
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
             </div>
         </section>
         <section>
@@ -157,32 +159,30 @@
                 <form action="carrito.php" method="post">
                     <input type="hidden" name="producto" value="kia morning">
                     <input type="hidden" name="precio" value="32000000">
-                    <button class="agregar-carrito" onclick="agregarAlCarrito('Nissan GTR R35', '34,290,000')">AGREGAR A CARRITO</button>
+                    <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
                     
             </div>
         </section>
     </main>
 </body>
 </html>
-    <!-- Carrito de Compras -->
-    <div class="carrito" id="carrito">
-        <h2>Carrito de Compras</h2>
-        <div id="itemsCarrito">No hay productos agregados.</div>
-    </div>
+   
+ 
 </main>
 
 <script>
     function agregarAlCarrito(modelo, precio) {
         const contenidoCarrito = document.getElementById('itemsCarrito');
-        // Verifica si es el primer elemento agregado
+        
+
         if(contenidoCarrito.innerHTML === 'No hay productos agregados.') {
-            contenidoCarrito.innerHTML = ''; // Limpia el mensaje inicial
+            contenidoCarrito.innerHTML = ''; 
         }
-        // Crea un nuevo elemento para el carrito
+        
         const elementoCarrito = document.createElement('div');
         elementoCarrito.classList.add('item-carrito');
         elementoCarrito.innerHTML = `<p>Modelo: ${modelo}</p><p>Precio: ${precio}</p>`;
-        // Agrega el nuevo elemento al carrito
+       
         contenidoCarrito.appendChild(elementoCarrito);
     }
     
