@@ -135,7 +135,7 @@ header {
 }
 
 .carrito-btn:hover, .regresar-btn:hover {
-    background-color: #003f83;
+    background-color: #ffffff;
 }
 nav a {
     background-color: transparent; /* Elimina el fondo morado */
