@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Vehículos</title>
     <link rel="stylesheet" href="estilo_vehiculos.css">
-    
 </head>
 <body>
     <header>
         <div class="header-content">
-            
-            <h1 style="text-align: left;">Tipos de Vehículos</h1>
+            <h1>Tipos de Vehículos</h1>
             <div class="header-buttons">
-                <a href="carrito.html" class="carrito-btn">Carrito</a>
                 <a href="index.html" class="regresar-btn">Regresar</a>
             </div>
         </div>
     </header>
 
     <main>
+        <section>
+           <main>
         
         <section>
             <img src="https://www.omoren.com/upload/save_image/0827175319_6128a7ff6bb7c.jpg" alt="Nissan GTR R35">
@@ -164,28 +163,58 @@
             </div>
         </section>
     </main>
-</body>
-</html>
-   
- 
-</main>
-
-<script>
-    function agregarAlCarrito(modelo, precio) {
-        const contenidoCarrito = document.getElementById('itemsCarrito');
+        </section>
         
+        <!-- Carrito de compras -->
+        <aside id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="itemsCarrito">No hay productos agregados.</div>
+            <p id="totalCarrito">Total: $0</p>
+        </aside>
+    </main>
 
-        if(contenidoCarrito.innerHTML === 'No hay productos agregados.') {
-            contenidoCarrito.innerHTML = ''; 
-        }
-        
-        const elementoCarrito = document.createElement('div');
-        elementoCarrito.classList.add('item-carrito');
-        elementoCarrito.innerHTML = `<p>Modelo: ${modelo}</p><p>Precio: ${precio}</p>`;
-       
-        contenidoCarrito.appendChild(elementoCarrito);
-    }
-    
-</script>
+    <aside id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="itemsCarrito">No hay productos agregados.</div>
+        <p id="totalCarrito">Total: $0</p>
+    </aside>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carritoBtns = document.querySelectorAll('.carrito-btn');
+            const itemsCarrito = document.getElementById('itemsCarrito');
+            const totalCarrito = document.getElementById('totalCarrito');
+
+            let carrito = [];
+
+            carritoBtns.forEach(btn => {
+                btn.addEventListener('click', agregarAlCarrito);
+            });
+
+            function agregarAlCarrito(event) {
+                event.preventDefault();
+                const producto = event.target.parentElement.querySelector('input[name="producto"]').value;
+                const precio = parseInt(event.target.parentElement.querySelector('input[name="precio"]').value);
+
+                carrito.push({ producto, precio });
+                mostrarCarrito();
+            } 
+
+            function mostrarCarrito() {
+                itemsCarrito.innerHTML = '';
+                let total = 0;
+
+                carrito.forEach(item => {
+                    const divItem = document.createElement('div');
+                    divItem.classList.add('item-carrito');
+                    divItem.innerHTML = `<p>${item.producto}</p><p>$${item.precio}</p>`;
+                    itemsCarrito.appendChild(divItem);
+                    total += item.precio;
+                });
+
+                totalCarrito.textContent = `Total: $${total}`;
+            }
+        });
+    </script>
 </body>
 </html>
