@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
-    /* Agrega la siguiente línea para establecer la imagen de fondo */
+    
     background-image: url('https://img.freepik.com/vector-gratis/faros-automoviles-realistas-composicion-ad-faros-iluminacion-verde-violeta_1284-56577.jpg');
-    /* Centra la imagen y la fija para que no se desplace con el contenido */
+    
     background-position: center;
     background-attachment: fixed;
-    /* Establece un tamaño de cobertura para la imagen */
+    
     background-size: cover;
 }
 .container {
@@ -16,5 +16,5 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: white; /* Agrega esta línea para establecer un fondo blanco */
+    background-color: white; 
 }
