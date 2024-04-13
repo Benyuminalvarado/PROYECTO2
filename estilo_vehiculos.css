@@ -19,7 +19,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header-content {
@@ -47,7 +47,7 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .carrito-btn:hover,
@@ -67,17 +67,17 @@ main {
 
 section img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Altura fija para las imágenes */
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .vehiculo-info {
     padding: 20px;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -113,7 +113,7 @@ a:hover {
     bottom: 20px;
     right: 20px;
     max-width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #itemsCarrito {
