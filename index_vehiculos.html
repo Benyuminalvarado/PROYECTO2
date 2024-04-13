@@ -11,7 +11,11 @@
         <div class="header-content">
             <h1 style="text-align: left;">Tipos de Vehículos</h1>
             <div class="header-buttons">
-                
+                <a href="index_vehiculos.html">Vehiculo</a>          
+                    <a href="index_cotizaciones.html">Cotizaciones</a>
+                    <a href="#"> Personal</a>
+                    <a href="servicio.html"> Servicios</a>
+                    <a href="#"> Fotos</a>
                 <a href="index.html" class="regresar-btn">Regresar</a>
             </div>
         </div>
@@ -22,9 +26,9 @@
            <main>
         
         <section>
-            <img src="https://www.omoren.com/upload/save_image/0827175319_6128a7ff6bb7c.jpg" alt="Nissan GTR R35">
+            <img src="https://www.omoren.com/upload/save_image/0827175319_6128a7ff6bb7c.jpg" alt="Nissan gtr r35">
             <div class="vehiculo-info">
-                <h2>Nissan GTR R35</h2>
+                <h2>Nissan gtr r35</h2>
                 <p><strong>Precio:</strong> $34,290,000</p>
                 <p><strong>Disponibilidad:</strong> Disponible</p>
                 <p><strong>Kilometraje:</strong> 5,000 km</p> 
@@ -66,7 +70,7 @@
                 <p><strong>Kilometraje:</strong> 15,000 km</p>
                 <strong><a href="index_cotizaciones.html">Cotizar</a></strong>
                 <form action="carrito.php" method="post">
-                    <input type="hidden" name="producto" value="Nissan GTR R35">
+                    <input type="hidden" name="producto" value="BMW 116 I">
                     <input type="hidden" name="precio" value="38990000">
                     <a href="carrito.html" class="carrito-btn">AGREGAR A CARRITO</a>
             </div>
@@ -107,7 +111,7 @@
             <img src="https://d21su7g2oc495k.cloudfront.net/images/vehiculos_sinmarca/PdX840Vo_LheiPxln4ppMnx3pP-TTQ_foto_.JPG" alt="Suzuki dzire 2016">
             <div class="vehiculo-info">
                 <h2>Suzuki dzire 2016</h2>
-                <p><strong>Precio:</strong> $999.999.999.999</p>
+                <p><strong>Precio:</strong> $91.000.000/p>
                 <p><strong>Disponibilidad:</strong> Disponible</p>
                 <p><strong>Kilometraje:</strong> 0 km</p>
                 <strong><a href="index_cotizaciones.html">Cotizar</a></strong>
@@ -193,7 +197,7 @@
 
                 carrito.push({ producto, precio });
                 mostrarCarrito();
-            } 
+            }
 
             function mostrarCarrito() {
                 itemsCarrito.innerHTML = '';
@@ -202,12 +206,16 @@
                 carrito.forEach(item => {
                     const divItem = document.createElement('div');
                     divItem.classList.add('item-carrito');
-                    divItem.innerHTML = `<p>${item.producto}</p><p>$${item.precio}</p>`;
+                    divItem.innerHTML = `<p>${item.producto}</p><p>$${formatoPrecio(item.precio)}</p>`;
                     itemsCarrito.appendChild(divItem);
                     total += item.precio;
                 });
 
-                totalCarrito.textContent = `Total: $${total}`;
+                totalCarrito.textContent = `Total: $${formatoPrecio(total)}`;
+            }
+
+            function formatoPrecio(precio) {
+                return precio.toLocaleString('es-CO', { minimumFractionDigits: 0 });
             }
         });
     </script>

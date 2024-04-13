@@ -19,13 +19,25 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+=======
+    padding: 20px 0;
+>>>>>>> bc3ee9094a3d25218082857de3320972a15da7c9
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav a {
     color: #ffffff;
+<<<<<<< HEAD
     text-decoration: none;
     margin-right: 20px;
+=======
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+>>>>>>> bc3ee9094a3d25218082857de3320972a15da7c9
 }
 
 #banner h1 {
@@ -71,7 +83,11 @@ main {
 
 section img {
     width: 100%;
+<<<<<<< HEAD
     height: 200px;
+=======
+    height: 200px; /* Altura fija para las imágenes */
+>>>>>>> bc3ee9094a3d25218082857de3320972a15da7c9
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
