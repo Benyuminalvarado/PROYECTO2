@@ -1,13 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
 .navigation {
-    background-color: #f8f8f8; /* Color de fondo */
-    padding: 10px; /* Espacio interno */
-    text-align: center; /* Centra los enlaces */
-    border-bottom: 1px solid #ddd; /* Borde inferior */
+    background-color: #007bff;
+    padding: 10px;
+    text-align: center;
 }
 
 .navigation a {
-    margin-right: 20px; /* Espacio entre enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    color: #333; /* Color del texto */
-    font-weight: bold; /* Negrita */
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #0056b3;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección Acerca del Servicio */
+#about {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Estilos para la sección Características */
+#features {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#features ul {
+    list-style-type: none;
+}
+
+#features li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para la sección Contacto */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Estilos específicos para la imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
 }

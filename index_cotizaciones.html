@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
         }
         .container {
             max-width: 600px;
@@ -28,7 +41,7 @@
         label {
             margin-top: 10px;
         }
-        input, select {
+        input, select, textarea {
             padding: 10px;
             margin-top: 5px;
         }
@@ -52,14 +65,17 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
+    <div class="navbar">
         <button><a href="index.html" class="regresar-btn">Regresar</a></button>
         <a href="index_vehiculos.html">Modelos</a> 
-                <a href="index_cotizaciones.html">Cotizaciones</a>
-                <a href="personal.html"> Personal</a>
-                <a href="servicio.html"> Servicios</a>
-                <a href="#"> Fotos</a>
+        <a href="index_cotizaciones.html">Cotizaciones</a>
+        <a href="personal.html">Personal</a>
+        <a href="servicio.html">Servicios</a>
+        <a href="#">Fotos</a>
+    </div>
+    <div class="container">
         <h2>Formulario de Cotización</h2>
         <form id="cotizacionForm">
             <label for="nombre">Nombre Completo:</label>
@@ -70,7 +86,7 @@
 
             <div class="prefix"></div>
             <label for="telefono">Teléfono (8 dígitos siguientes):</label>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" placeholder="12345678" required title="Por favor, ingresa los 8 dígitos siguientes al .">
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" placeholder="Ej. 12345678" required title="Por favor, ingresa los 8 dígitos siguientes al .">
 
             <label for="modelo">Modelo de Interés:</label>
             <select id="modelo" name="modelo" required>
@@ -89,4 +105,5 @@
         </form>
     </div>
 </body>
+
 </html>
