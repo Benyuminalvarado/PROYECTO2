@@ -8,16 +8,18 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1 style="text-align: left;">Tipos de Vehículos</h1>
-            <div class="header-buttons">
-                <a href="index_vehiculos.html">Vehiculo</a>          
-                    <a href="index_cotizaciones.html">Cotizaciones</a>
-                    <a href="personal.html"> Personal</a>
-                    <a href="servicio.html"> Servicios</a>
-                    <a href="#"> Fotos</a>
-                <a href="index.html" class="regresar-btn">Regresar</a>
-            </div>
+        <div id="cosasArriba">
+            <img src="l.png" alt="">
+            <h1>Melipilla Automotriz</h1>
+            <nav>
+                <a href="index.html">principal</a> 
+                <a href="index_vehiculos.html">Modelos</a> 
+                <a href="index_cotizaciones.html">Cotizaciones</a>
+                <a href="personal.html"> Personal</a>
+                <a href="servicio.html"> Servicios</a>
+                <a href="#"> Fotos</a>
+            </nav>
+        </div>
         </div>
     </header>
 
@@ -217,7 +219,33 @@
             function formatoPrecio(precio) {
                 return precio.toLocaleString('es-CO', { minimumFractionDigits: 0 });
             }
-        });
+            
+        }
+        );
+        
     </script>
 </body>
+<footer>
+    <div class="container">
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Dirección: Las merceditas, Melipilla, Chile</p>
+                <br>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>Email: info@Automotrizmel.com</p>
+                <br>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>Teléfono: +1234567890</p>
+                <br>
+            </div>
+        </div>
+        <p>&copy; 2024 melipilla motor. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
 </html>

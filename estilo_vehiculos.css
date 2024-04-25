@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    background-color: #212529;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,12 +15,8 @@ header {
     background-color: #212529;
     color: #ffffff;
     padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 nav a {
     color: #ffffff;
@@ -37,6 +33,7 @@ nav a:hover {
     font-size: 3rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: right;
 }
 
 #boton a {
@@ -140,4 +137,19 @@ a:hover {
     padding: 10px;
     background: #f8f9fa;
     border-radius: 5px;
+}
+.contact-info .info-item {
+    flex: 1;
+}
+
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #dee2e6;
 }

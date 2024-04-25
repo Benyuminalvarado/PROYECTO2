@@ -8,7 +8,20 @@ body {
     background-size: cover;
     color: #333;
 }
+#banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
 
+#boton a {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
 .container {
     max-width: 600px;
     margin: auto;
@@ -20,7 +33,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-color: #212529;
+    background-color: #e7e7e7;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -29,13 +42,6 @@ header {
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
 #banner h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -50,106 +56,73 @@ nav a {
     text-transform: uppercase;
     transition: all 0.3s ease;
 }
-
-#boton a:hover {
-    background-color: #f8f9fa;
-    color: #212529;
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-}
-
-.contact-info .info-item {
-    flex: 1;
-}
-
-/* Estilos del contenido principal */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-section img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.vehiculo-info {
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    margin: 0;
-    font-size: 1.75rem;
-    color: #212529;
-}
-
-p {
-    margin: 10px 0;
-    color: #495057;
-}
-
-/* Estilos de los enlaces */
-a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-/* Estilos del carrito de compras */
-#carrito {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    padding: 20px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    max-width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#itemsCarrito {
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-.item-carrito {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #f8f9fa;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #212529;
+nav a {
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
 }
 
-footer p {
-    margin-top: 10px;
+#banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .prefix {
+            margin-bottom: -1px;
+        }
+        #telefono {
+            margin-top: 0;
+        }
+ 
