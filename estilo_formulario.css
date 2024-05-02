@@ -8,20 +8,10 @@ body {
     background-size: cover;
     color: #333;
 }
-#banner h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
 
-#boton a {
-    background-color: #ffffff;
-    color: #ffffff;
-    padding: 15px 40px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
+
+
+
 .container {
     max-width: 600px;
     margin: auto;
@@ -31,32 +21,18 @@ body {
     background-color: white;
 }
 
-/* Estilos del encabezado */
-header {
-    background-color: #e7e7e7;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+
+
 #banner h1 {
+    color: #ffffff;
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-#boton a {
-    background-color: #ffffff;
-    color: #212529;
-    padding: 15px 40px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
+
 nav a {
+    
+    padding: 20px;
     color: #ffffff;
     text-decoration: none;
     margin-right: 20px;
