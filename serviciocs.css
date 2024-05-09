@@ -1,107 +1,111 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
 }
 
-/* Estilos para la barra de navegación */
-.navigation {
-    background-color: #007bff;
-    padding: 10px;
-    text-align: center;
+header {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 20px;
 }
 
-.navigation a {
-    color: white;
+nav a {
+    color: #ffffff;
     text-decoration: none;
     margin-right: 20px;
-    font-size: 18px;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#boton a {
+    background-color: #ffffff;
+    color: #212529;
+    padding: 15px 40px;
+    border-radius: 30px;
     font-weight: bold;
-    transition: color 0.3s ease;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
-.navigation a:hover {
-    color: #0056b3;
+#boton a:hover {
+    background-color: #f8f9fa;
+    color: #212529;
 }
 
-/* Estilos para el encabezado */
-header {
-    background-color: #f0f0f0;
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.contact-info .info-item {
+    flex: 1;
+}
+
+footer {
+    background-color: #212529;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
 
-h1 {
-    color: #007bff;
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+footer p {
+    margin-top: 10px;
 }
 
-/* Estilos para el contenido principal */
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+/* Estilos específicos para este HTML */
+
+#about h2, #features h2, #contact h2 {
+    color: #333;
 }
 
-/* Estilos para las secciones */
-section {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para la sección Acerca del Servicio */
-#about {
-    background-color: #fff;
-    padding: 20px;
-}
-
-/* Estilos para la sección Características */
-#features {
-    background-color: #f0f0f0;
-    padding: 20px;
+#about p, #features ul, #contact p {
+    color: #666;
 }
 
 #features ul {
     list-style-type: none;
+    padding: 0;
 }
 
 #features li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/* Estilos para la sección Contacto */
-#contact {
-    background-color: #fff;
-    padding: 20px;
+#fondo {
+    background-image: url('ruta/a/imagen.jpg');
+    background-size: cover;
+    height: 300px; /* Ajusta la altura según tu diseño */
+    margin-bottom: 20px;
 }
 
-/* Estilos para el footer */
-footer {
-    background-color: #007bff;
-    color: white;
+/* Estilos específicos para los elementos de la imagen */
+#fondo h1 {
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    font-size: 14px;
 }
 
-/* Estilos específicos para la imagen */
-img {
-    max-width: 100%;
-    height: auto;
+#fondo img {
     display: block;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
-img:hover {
-    transform: scale(1.1);
+#fondo footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#fondo footer p {
+    color: #fff;
 }
