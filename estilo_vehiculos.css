@@ -1,155 +1,96 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #212529;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #333;
+    background: linear-gradient(135deg, #f8f8f8 40%, #e8e8e8 100%);
 }
 
-/* Estilos del encabezado */
 header {
-    background-color: #212529;
+    background: linear-gradient(180deg, #212529 0%, #32383e 100%);
     color: #ffffff;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 20px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffb74d;
-}
-
-#banner h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: right;
-}
-
-#boton a {
-    background-color: #ffffff;
-    color: #212529;
-    padding: 15px 40px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#boton a:hover {
-    background-color: #f8f9fa;
-    color: #212529;
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-}
-
-.contact-info .info-item {
-    flex: 1;
-}
-
-/* Estilos del contenido principal */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-section img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.vehiculo-info {
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    margin: 0;
-    font-size: 1.75rem;
-    color: #212529;
-}
-
-p {
-    margin: 10px 0;
-    color: #495057;
-}
-
-/* Estilos de los enlaces */
-a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-/* Estilos del carrito de compras */
-#carrito {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    padding: 20px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    max-width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#itemsCarrito {
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-.item-carrito {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #f8f9fa;
-    border-radius: 5px;
 }
-.contact-info .info-item {
-    flex: 1;
+
+nav a,
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px; /* Espacio entre elementos en el nav */
+}
+
+nav a:hover, nav ul li a:hover {
+    background-color: #ffb74d;
+    color: #212529;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos de la sección de Información */
+#informacion {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+#informacion:hover {
+    transform: scale(1.05);
+}
+
+#informacion h2 {
+    color: #212529;
+    font-size: 24px;
+}
+
+#informacion p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos de las otras secciones */
+#personal, #banner {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+#personal h2, #banner h2 {
+    color: #212529;
+    font-size: 24px;
+}
+
+#personal p, #banner p {
+    color: #333;
+    line-height: 1.6;
 }
 
 footer {
-    background-color: #212529;
+    background: linear-gradient(180deg, #333333 0%, #4f4f4f 100%);
     color: #ffffff;
-    padding: 20px;
     text-align: center;
-}
-
-footer p {
-    margin-top: 10px;
-    color: #dee2e6;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
