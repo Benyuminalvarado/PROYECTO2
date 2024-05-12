@@ -3,91 +3,92 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background: linear-gradient(135deg, #f8f8f8 40%, #e8e8e8 100%);
 }
 
 header {
-    background-color: #212529;
+    background: linear-gradient(180deg, #212529 0%, #32383e 100%);
     color: #ffffff;
     padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el encabezado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-nav a {
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a, nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease; /* Transición suave para el color del enlace */
-}
-
-nav ul li a:hover {
-    color: #ffb74d; /* Color de texto al pasar el mouse sobre el enlace */
+nav a:hover, nav ul li a:hover {
+    background-color: #ffb74d;
+    color: #212529;
 }
 
 main {
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 /* Estilos de la sección de Información */
 #informacion {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para la sección */
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+#informacion:hover {
+    transform: scale(1.05);
 }
 
 #informacion h2 {
-    margin-bottom: 10px;
-    color: #333; /* Color del título */
+    color: #212529;
+    font-size: 24px;
 }
 
 #informacion p {
-    color: #666;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Estilos de las otras secciones */
 #personal, #banner {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para las secciones */
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 #personal h2, #banner h2 {
-    margin-bottom: 10px;
-    color: #333; /* Color del título */
+    color: #212529;
+    font-size: 24px;
 }
 
 #personal p, #banner p {
-    color: #666;
+    color: #333;
+    line-height: 1.6;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: linear-gradient(180deg, #333333 0%, #4f4f4f 100%);
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el pie de página */
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
