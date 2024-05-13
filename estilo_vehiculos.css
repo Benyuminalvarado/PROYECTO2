@@ -1,134 +1,95 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    background-color: #f8f8f8;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #212529;
+    color: #ffffff;
     padding: 20px;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    color: #ffd700; /* Cambia el color al pasar el mouse */
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-section {
-    background-color: #fff;
-    margin-bottom: 40px; /* Aumenta el espacio entre las filas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    width: calc(33.33% - 40px); /* Reduce el ancho de las secciones y aumenta el espacio entre ellas */
-    margin-right: 20px; /* Espacio entre las secciones */
-}
-
-section:nth-child(3n) {
-    margin-right: 0; /* Elimina el margen derecho en la tercera columna para evitar desbordamiento */
-}
-
-section.img-section {
-    width: calc(40% - 40px); /* Ajusta el ancho de las secciones de imágenes */
-}
-
-section.text-section {
-    width: calc(60% - 40px); /* Ajusta el ancho de las secciones de texto */
-}
-
-Z
-.vehiculo-info {
-    padding: 20px;
-}
-
-.vehiculo-info h2 {
-    margin-top: 0;
-}
-
-.carrito-btn {
-    display: block;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    border: none;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.carrito-btn:hover {
-    background-color: #000;
-}
-
-/* Estilos del carrito */
-#carrito {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    width: 250px;
-    border-radius: 5px;
-}
-
-.item-carrito {
+nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-/* Estilos del footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Estilos de la información de contacto */
-.contact-info {
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.info-item {
-    margin: 0 20px;
-    text-align: center;
+nav a, nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.info-item i {
-    margin-bottom: 10px;
+nav a:hover, nav ul li a:hover {
+    background-color: #ffb74d;
+    color: #212529;
+}
+
+main {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Estilos de la sección de Información */
+#informacion {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+#informacion:hover {
+    transform: scale(1.05);
+}
+
+#informacion h2 {
+    color: #212529;
     font-size: 24px;
+}
+
+#informacion p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos de las otras secciones */
+#personal, #banner {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+#personal h2, #banner h2 {
+    color: #212529;
+    font-size: 24px;
+}
+
+#personal p, #banner p {
+    color: #333;
+    line-height: 1.6;
+}
+
+footer {
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
