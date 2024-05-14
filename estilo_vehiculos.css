@@ -36,60 +36,45 @@ nav a:hover, nav ul li a:hover {
 main {
     padding: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas */
     gap: 20px;
 }
 
-/* Estilos de la sección de Información */
-#informacion {
+section {
     background-color: #ffffff;
     border: none;
     border-radius: 15px;
     padding: 30px;
-    margin-bottom: 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
 }
 
-#informacion:hover {
-    transform: scale(1.05);
+section img {
+    width: 100%; /* Hacer que todas las imágenes tengan el mismo ancho */
+    height: auto; /* Ajustar la altura automáticamente */
 }
 
-#informacion h2 {
+section h2 {
     color: #212529;
     font-size: 24px;
 }
 
-#informacion p {
+section p {
     color: #333;
     line-height: 1.6;
 }
 
-/* Estilos de las otras secciones */
-#personal, #banner {
-    background-color: #ffffff;
+.carrito-btn {
+    background-color: #ffb74d;
+    color: #212529;
+    padding: 10px 20px;
     border: none;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#personal h2, #banner h2 {
-    color: #212529;
-    font-size: 24px;
+.carrito-btn:hover {
+    background-color: #ff9800;
+    color: #fff;
 }
-
-#personal p, #banner p {
-    color: #333;
-    line-height: 1.6;
-}
-
-footer {
-    background: #333333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-}
+    
